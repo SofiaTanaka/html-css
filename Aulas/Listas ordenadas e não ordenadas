@@ -1,0 +1,31 @@
+LISTAS ORDENADAS
+São listas com uma ordem, podem ser por exemplo: tarefas do seu dia a dia
+
+Para fazermos isso, usamos a tag: <ol> significado: ordened list
+a tag <li> nas tarefas é opcional. Apenas <ol> é obrigatório
+
+Alguns parâmetros que podemos passar abaixo
+type='':
+1 = significa que é uma lista do tipo numérico(1,2,3...)
+A = significa que é uma lista do tipo maiúsculas(A,B,C...)
+a =significa que é uma lista do tipo minúsculas(a,b,c...)
+I = significa que é uma lista do tipo romana maiúscula(I,II,III...)
+i = significa que é uma lista do tipo romana minúscula(i,ii,iii...)
+
+
+start='':
+Começa no número desejado. Por exemplo: start='4' ficará assim: 4,5,6...
+
+
+
+LISTAS NÃO ORDENADAS
+São listas que a ordem não importa. Podemos passar alguns parâmetros
+type='':
+square = vão ser mostradas com um quadradinho antes
+circle = vão ser mostradas com uma bolinha aberta
+disk = bolinha preta padrão
+
+
+
+
+

@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'hops';
+    src: url('pacote-projeto/fontes/hops-and-barley-c4-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'idroid';
+    src: url('pacote-projeto/fontes/idroid.otf') format('opentype');
+}
+
+/* - - Global - - */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+:root {
+    
+    --claro-transparente: #84e4ac3b;
+    --claro: #c5ebd6;
+    --meio: #2cac64;
+    --escuro: #1B5C39;
+
+    --background-extra: #84e4ac61;
+    --background-extra-h3: #48a970;
+
+    --fonte-cabeçalho: 'hops';
+    --fonte-destaque: 'idroid';
+
+}
+
+body {
+    background-color: var(--claro);
+}
+
+
+/* - - Cabeçalho - - */
+
+header {
+    background-image: linear-gradient(to bottom, var(--claro), var(--meio), var(--escuro));
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.269);
+    text-align: center;
+    color: white;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.429);
+}
+
+#cabeçalho-titulo {
+    font-family: var(--fonte-cabeçalho);
+    font-weight: normal;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.navBar {
+    padding: 30px 0px 10px 10px;
+    text-align: left;
+}
+
+.navBar a {
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px 10px 10px;
+    text-shadow: none;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+.navBar a:hover {
+    color: var(--escuro);
+    background-color: #84e4ac;
+}
+
+
+/* - - Main - - */
+
+
+.conteudo {
+    background-color: white;
+    width: 75%;
+    margin: auto;
+    padding: 30px 15px 30px 15px;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 27%);
+}
+
+.conteudo p {
+    text-indent: 35px;
+    text-align: justify;
+    padding: 15px 5px 15px 5px;
+}
+
+.conteudo a {
+    color: var(--escuro);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.conteudo a::after {
+    content: " 📎 ";
+}
+
+.conteudo img {
+    display: block;
+    margin: auto;
+}
+
+/* - - Main > Heading Tags - - */
+
+.transparente {
+    font-family: 'idroid';
+    color: var(--escuro);
+    background-color: var(--claro-transparente);
+}
+
+#conteudo-titulo {
+    font-size: 2em;
+    font-family: var(--fonte-destaque);
+    color: var(--escuro);
+}
+
+/* - - Main > Div BoxVideo - - */
+
+div.boxVideo {
+    background-color: var(--escuro);
+    margin: 0px -15px 30px -15px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.boxVideo > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/* - - Main > Aside - - */
+
+.extra {
+    background-color: var(--background-extra);
+    border-radius: 10px;
+    padding: 10px 7px 10px 7px;
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 27%);
+    margin-top: -10px;
+}
+
+.extra h3 {
+    background-color: var(--background-extra-h3);
+    margin: -10px -8px 20px -8px;
+    padding: 10px 5px;
+    color: white;
+    border-radius: 10px 10px 0px 0px;  
+}
+
+.extra p {
+    padding: 0px 7px 20px 7px;
+    text-align: justify;
+}
+
+.extra ul {
+    padding-bottom: 20px;
+    display: inline-block;
+    list-style: url(pacote-projeto/imagens/checkmark.png);
+}
+
+
+/* - - Rodapé - - */
+
+
+footer {
+    background-color: var(--escuro);
+    margin-top: 15px;
+    padding: 3px;
+    color: white; 
+    font-size: 0.8em;
+    text-align: center;
+}
+
+footer a {
+    color: white; 
+    font-weight: bold;
+}
+
+    
+

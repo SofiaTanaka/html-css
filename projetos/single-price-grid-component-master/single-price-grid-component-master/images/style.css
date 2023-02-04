@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+/* - - Globais - - */
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --ciano: hsl(179, 62%, 43%);
+    --amarelo: hsl(71, 73%, 54%);
+    --cinza: hsl(204, 43%, 93%);
+    --azul-cinza: hsl(218, 22%, 67%);
+}
+
+body {
+    font-size: 16px;
+}
+
+
+/* - - Div Principal - - */
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    margin: auto;
+}

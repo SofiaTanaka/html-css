@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/M.png" type="image/png">
+        <img src="Imagens/G.png" alt="Imagem grande para TV/Computador">
+    </picture>
+
+    <h1>Reproduzindo áudio de maneira simples e rápida</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML</p>
+    <audio src="midia/BRIDGE - Something About You (Official Music Video).mp3" controls autoplay></audio>
+    <!--MP3 | OGG | WAV-->
+
+    <h1>Outra maneira de reproduzir áudio</h1>
+    <audio preload="metadata" controls loop>
+        <source src="midia/BRIDGE - Something About You (Official Music Video).mp3" type="audio/mpeg">
+        <!--Em caso do navegador não suportar mp3, ele vai tentar reproduzir os próximos sources (ogg,wav), caso não consiga, mostrará o link de download do arquivo mp3 -->
+        <!--Devemos evitar o source WAV pois é muito grande e pesado pro site-->
+        <source src="midia/BRIDGE - ＂Something About You＂ (Official Music Video).ogg" type="audio/ogg">
+        <p>Infelizmente, seu navegador é incapaz de reproduzir áudio. <a href="../ex011/midia/BRIDGE - Something About You (Official Music Video).mp3">Clique aqui</a> para baixar o arquivo MP3.</p>
+    </audio>
+</body>
+</html>

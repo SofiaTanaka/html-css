@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <!--A tag <a> signica âncora, ou seja, ela serve pra adicionar um link ao texto, quando clicar nele, será direcionado a página do link--> 
+
+    <!--É importante adicionar o target= _blank e rel=external para o link abrir em uma nova guia do navegador, sem eles, abrirá na mesma página, estamos dizendo ao site que é pra abrir externamente, não interiormente-->
+
+    <p>Link externo é um link que vai apontar para outro site que não é nosso.</p>
+    <p>Você pode acessar o livro <a href="https://meupdf.com/tudo-sobre-o-amor-bell-hooks-2/" target="_blank" rel="external">Tudo Sobre Amor da Bell Hooks no MeuPDF</a></p>
+    <p>Você também pode acessar o <a href="https://twitter.com/hismoon_15" target="_blank" rel="external">meu Twitter</a>.</p>
+
+    <h1>Usando links Internos</h2>
+    <p>É um link que vai fazer uma relação com outra página que está dentro do nosso servidor, e diz respeito a nossa página.</p>
+    <p>Esta é a primeira página do site. Se você quiser, pode visitar também a minha <a href="pag002.html" target="_self" rel="next">segunda página</a>.</p> 
+    <!--rel next = proxima pagina-->
+    <p>Você também pode acessar a nossa página de <a href="Noticias/pag003.html" target="_self" rel="next">notícias</a></p>
+
+    <h1>Links para Download</h1>
+    <ul>
+        <li><a href="Livro/Tudo Sobre o Amor_ Novas Perspectivas - Bell Hooks.pdf" download="TudoSobreAmor.pdf" type="application/pdf">Baixar o livro Tudo Sobre Amor em PDF</a></li>
+        <li><a href="Livro/Tudo Sobre o Amor_ Novas Perspectivas - Bell Hooks.zip" download="TudoSobreAmor.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>

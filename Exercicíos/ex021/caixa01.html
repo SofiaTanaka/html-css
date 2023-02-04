@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /*box - level*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid; /*solid, double,dotted, dashed */
+            border-color: black;
+
+            /*border: 10px solid black*/
+
+            /*A configuração de um padding é na ordem do ponteiro do relógio: começa por cima, vai pra direita, pra baixo e depois pra esquerda.*/
+            padding-top: 10px; 
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*padding: 
+            4 medidas = cima direita baixo esquerda
+            1 medida = mesmo valor para todos
+            2 medidas = cima + baixo iguais, direita + esquerda iguais*/
+
+            /* margin: auto; Centraliza uma caixa na horizontal*/
+
+            margin-top: 20px;
+            margin-right: 40px;
+            margin-bottom: 25px;
+            margin-left: 40px;
+
+            /*margin: cima direita baixo esquerda*/
+            /*margin: 20px 40px 25px 40px*/
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: pink;
+
+            /*outline: largura estilo cor*/
+        }
+
+        a { /*inline - level*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px; 
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa Box Level</h1>
+    <p>Parágrafos tambem são exemplos de box-level, mas os <a href="a">links</a> são exemplos de caixas inline level. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+FONTE MONOESPAÇADA
+A Fonte monoespaçada, é nada mais, nada menos que uma fonte que permite distruibuir cada letra em tamanhos de espaço/memória iguais. É bom para melhor visualização de um texto. Tag usada: <code>
+
+Mas o <code> não identa como a gente quer, isto é, ele não quebra linhas e coloca o texto exatamente onde queremos. Então pra isso, usamos a tag <pre>. Colocamos tudo o que está dentro do <code>, dentro do <pre>
+
+
+
+CITAÇÕES SIMPLES
+Para trabalharmos com citações simples, por exemplo, queremos citar na página uma frase dita por outra pessoa, invés de colocarmos aspas manualmente, usamos a tag <q>. Esta tag significa quote, e é para citações curtas, coloca a frase desejada entre aspas.
+
+
+
+CITAÇÕES COMPLEXAS
+Para trabalharmos com citações complexas, como trechos grandes de livros, criamos um <blockquote> só para o texto. E dentro do blockquote podemos passar um parâmetro (cite=) que serve para colocar o link dessa fonte, não muda nada no front end do site, porém deixa a parte interna da página saber de onde é, dando assim seus direitos ao autor.
+
+
+
+ABREVIAÇÕES
+Ás vezes em nossos sites usamos abreviações de coisas, com a tag <abbr> podemos deixar o significado dessas abreviações em pequenos pop ups quando a pessoa passa o cursor em cima da abreviação
+
+
+
+FONTE AO CONTRÁRIO
+Tag inútil mas posso precisar um dia :D 
+Para invertermos o texto, criamos um paragrafo e dentro desse paragrafo digitamos bdo para usarmos a tag bdo. Se escrevermos dir="rtl" ele vai escrever o texto de trás pra frente (right to left)
