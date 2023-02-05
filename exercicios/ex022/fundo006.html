@@ -8,13 +8,22 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /*contein= mostra 100% da imagem e adapta a imagem(estica etc)*/
-                                    /*cover=não mostra a imagem 100% e preenche a tela sem modificar imagem*/
-            background-attachment: fixed; /*vinculo */
+            background-size: cover; 
+            background-attachment: fixed; /*
+
+        background-size: contein= mostra 100% da imagem e adapta a imagem(estica etc)
+        background-size: cover=não mostra a imagem 100% e preenche a tela sem modificar imagem*/
+        /*background-attachment: fixed = fundo permanece fixo em relação à viewport (janela do navegador) */
+
+            /*Shorthard - background
+                color > image > position > repeat > [[[size]]] > attachment*/
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+             
 
         }
         main {
